@@ -10,6 +10,7 @@ import NetWorthSection from "../../components/user/NetWorthSection";
 import GoalsSection from "../../components/user/GoalsSection";
 import ExistingProvisionCard from "../../components/user/ExistingProvisionCard";
 import FinancialPlanningCard from "../../components/user/FinancialPlanningCard";
+import ExistingPolicies from "../../components/user/ExistingPolicies";
 
 function Home() {
   return (
@@ -31,7 +32,6 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* bread Crumb detail */}
       <div class="bg-[#F2F1F9]  py-2">
         <nav class="text-sm text-gray-500" aria-label="Breadcrumb">
           <ol class="list-none p-0 inline-flex">
@@ -76,6 +76,9 @@ function Home() {
       <div className="flex flex-col lg:flex-row gap-5 py-3">
         <ExistingProvisionCard />
         <FinancialPlanningCard />
+      </div>
+      <div className="flex">
+        <ExistingPolicies />
       </div>
     </div>
   );
