@@ -48,58 +48,55 @@ function UserSidebar() {
   return (
     <div>
       <Card className="h-[calc(100vh-5.2rem)] md:min-h-[calc(100vh-5.2rem)]  overflow-y-auto  hidescroll w-full  border-r-[1px] border-t-[1px] rounded-none   shadow-xl shadow-blue-gray-900/5 hidden md:block">
-        <List className="">
+        <List className="flex justify-center items-center gap-1 ml-3">
           <ListItem
             onClick={() => navigate("/")}
-            className="rounded-none hover:bg-[#6560F0]  text-[#373737] hover:text-white"
+            className="rounded-none hover:bg-[#6560F0]  text-[#373737] hover:text-white flex gap-3"
           >
             <ListItemPrefix>
-              {/* <BuildingOffice2Icon className="h-6 w-6" /> */}
               <img src={dashboardIcon} alt="" className="h-6 w-6" />
             </ListItemPrefix>
             <h1>Dashboard</h1>
           </ListItem>
-          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white">
+          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white flex gap-3">
             <ListItemPrefix>
-              {/* <ListBulletIcon className="h-6 w-6" /> */}
               <img src={profileIcon} alt="" className="h-6 w-6" />
             </ListItemPrefix>
             <h1>Profile Page</h1>
           </ListItem>
-          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white">
+          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white flex gap-3">
             <ListItemPrefix>
-              {/* <MagnifyingGlassIcon className="h-6 w-6" /> */}
               <img src={investmentIcon} alt="" className="h-6 w-6" />
             </ListItemPrefix>
             <h1>Investment Amount</h1>
           </ListItem>
 
-          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white">
+          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white flex gap-3">
             <ListItemPrefix>
               <img src={businessIcon} alt="" className="h-6 w-6" />
             </ListItemPrefix>
             <h1>Business Categories</h1>
           </ListItem>
-          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white">
+          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white flex gap-3">
             <ListItemPrefix>
               <img src={purposeIcon} alt="" className="h-6 w-6" />
             </ListItemPrefix>
             <h1>Purpose of Investments</h1>
           </ListItem>
-          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white">
+          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white flex gap-3">
             <ListItemPrefix>
               <img src={sourceIcon} alt="" className="h-6 w-6" />
             </ListItemPrefix>
             <h1>Sources of Funds</h1>
           </ListItem>
-          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white">
+          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white flex gap-3">
             <ListItemPrefix>
               <img src={availableIcon} alt="" className="h-6 w-6" />
             </ListItemPrefix>
             <h1>Available Project</h1>
           </ListItem>
 
-          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white">
+          <ListItem className="rounded-none hover:bg-[#6560F0] text-[#373737] hover:text-white flex gap-3">
             <ListItemPrefix>
               <PowerIcon className="h-6 w-6" />
             </ListItemPrefix>
