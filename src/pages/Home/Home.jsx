@@ -8,6 +8,8 @@ import DashboardCards from "../../components/user/DashboardCards";
 import NetIncomeSection from "../../components/user/NetIncomeSection";
 import NetWorthSection from "../../components/user/NetWorthSection";
 import GoalsSection from "../../components/user/GoalsSection";
+import ExistingProvisionCard from "../../components/user/ExistingProvisionCard";
+import FinancialPlanningCard from "../../components/user/FinancialPlanningCard";
 
 function Home() {
   return (
@@ -70,6 +72,10 @@ function Home() {
       </div>
       <div className="flex">
         <GoalsSection />
+      </div>
+      <div className="flex flex-col lg:flex-row gap-5 py-3">
+        <ExistingProvisionCard />
+        <FinancialPlanningCard />
       </div>
     </div>
   );

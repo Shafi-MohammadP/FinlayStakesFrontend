@@ -7,18 +7,18 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 ChartJS.register(Tooltip, Title, ArcElement, Legend);
 const assetStaticData = [
-  { label: "Cash in Hand & Bank", value: "0", id: 1 },
-  { label: "Shares / Equities", value: "0", id: 2 },
-  { label: "Others", value: "0", id: 3 },
-  { label: "Property value", value: "0", id: 4 },
-  { label: "Business Assets", value: "0", id: 5 },
+  { label: "Cash in Hand & Bank", value: "0.00", id: 1 },
+  { label: "Shares / Equities", value: "0.00", id: 2 },
+  { label: "Others", value: "0.00", id: 3 },
+  { label: "Property value", value: "0.00", id: 4 },
+  { label: "Business Assets", value: "0.00", id: 5 },
 ];
 const liabilityStaticData = [
-  { label: "Bank loans", value: "0", id: 1 },
-  { label: "Mortgages", value: "0", id: 2 },
-  { label: "Hand loans", value: "0", id: 3 },
-  { label: "Credit card outstanding", value: "0", id: 4 },
-  { label: "Auto loans", value: "0", id: 5 },
+  { label: "Bank loans", value: "0.00", id: 1 },
+  { label: "Mortgages", value: "0.00", id: 2 },
+  { label: "Hand loans", value: "0.00", id: 3 },
+  { label: "Credit card outstanding", value: "0.00", id: 4 },
+  { label: "Auto loans", value: "0.00", id: 5 },
 ];
 const liabilityFirstRow = liabilityStaticData.slice(0, 3);
 const liabilitySecondRow = liabilityStaticData.slice(3);
@@ -140,13 +140,20 @@ function NetWorthSection() {
                         ></div>
                         <span>{item.label}</span>
                       </div>
-                      <div className="flex justify-between gap-11 w-36">
-                        <span className="font-bold"> AED {item.value}</span>
-                        <img
-                          src={item.id % 2 === 0 ? arrowDown : arrowUp}
-                          alt="Arrow Up"
-                          className="w-4 h-4 ml-2 mt-1"
-                        />
+                      <div className="flex gap-16 w-36 ">
+                        <div className="flex gap-1">
+                          <p className="font-semibold">AED</p>
+                          <p className="font-semibold"> {item.value}</p>
+                        </div>
+
+                        <div className="flex gap-1">
+                          <img
+                            src={item.id % 2 === 0 ? arrowDown : arrowUp}
+                            alt="Arrow Up"
+                            className="w-4 h-4 ml-2 mt-1"
+                          />
+                          <h3 className="font-bold">0.0%</h3>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -162,13 +169,20 @@ function NetWorthSection() {
                         ></div>
                         <span>{item.label}</span>
                       </div>
-                      <div className="flex justify-between gap-11 w-36">
-                        <span className="font-bold"> AED {item.value}</span>
-                        <img
-                          src={item.id % 2 === 0 ? arrowDown : arrowUp}
-                          alt="Arrow Up"
-                          className="w-4 h-4 ml-2 mt-1"
-                        />
+                      <div className="flex gap-16 w-36 ">
+                        <div className="flex gap-1">
+                          <p className="font-semibold">AED</p>
+                          <p className="font-semibold"> {item.value}</p>
+                        </div>
+
+                        <div className="flex gap-1">
+                          <img
+                            src={item.id % 2 === 0 ? arrowDown : arrowUp}
+                            alt="Arrow Up"
+                            className="w-4 h-4 ml-2 mt-1"
+                          />
+                          <h3 className="font-bold">0.0%</h3>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -222,13 +236,20 @@ function NetWorthSection() {
                         ></div>
                         <span>{item.label}</span>
                       </div>
-                      <div className="flex justify-between gap-11 w-36">
-                        <span className="font-bold"> AED {item.value}</span>
-                        <img
-                          src={item.id % 2 === 0 ? arrowDown : arrowUp}
-                          alt="Arrow Up"
-                          className="w-4 h-4 ml-2 mt-1"
-                        />
+                      <div className="flex gap-16 w-36 ">
+                        <div className="flex gap-1">
+                          <p className="font-semibold">AED</p>
+                          <p className="font-semibold"> {item.value}</p>
+                        </div>
+
+                        <div className="flex gap-1">
+                          <img
+                            src={item.id % 2 === 0 ? arrowDown : arrowUp}
+                            alt="Arrow Up"
+                            className="w-4 h-4 ml-2 mt-1"
+                          />
+                          <h3 className="font-bold">0.0%</h3>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -244,13 +265,20 @@ function NetWorthSection() {
                         ></div>
                         <span>{item.label}</span>
                       </div>
-                      <div className="flex justify-between gap-11 w-36">
-                        <span className="font-bold"> AED {item.value}</span>
-                        <img
-                          src={item.id % 2 === 0 ? arrowDown : arrowUp}
-                          alt="Arrow Up"
-                          className="w-4 h-4 ml-2 mt-1"
-                        />
+                      <div className="flex gap-16 w-36 ">
+                        <div className="flex gap-1">
+                          <p className="font-semibold">AED</p>
+                          <p className="font-semibold"> {item.value}</p>
+                        </div>
+
+                        <div className="flex gap-1">
+                          <img
+                            src={item.id % 2 === 0 ? arrowDown : arrowUp}
+                            alt="Arrow Up"
+                            className="w-4 h-4 ml-2 mt-1"
+                          />
+                          <h3 className="font-bold">0.0%</h3>
+                        </div>
                       </div>
                     </div>
                   ))}

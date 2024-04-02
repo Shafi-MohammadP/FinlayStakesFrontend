@@ -34,7 +34,7 @@ function DashboardCards() {
             </div>
             <div className="flex px-[25%] py-2">
               <strong>
-                AED <span className="text-2xl">0</span>
+                AED <span className="text-2xl">0.00</span>
               </strong>
             </div>
             <hr className="bg-[#DEDFEE] " />
@@ -73,7 +73,7 @@ function DashboardCards() {
             </div>
             <div className="flex px-[25%] py-2">
               <strong>
-                AED <span className="text-2xl">0</span>
+                AED <span className="text-2xl">0.00</span>
               </strong>
             </div>
             <hr className="bg-[#DEDFEE] " />
@@ -114,7 +114,7 @@ function DashboardCards() {
             </div>
             <div className="flex px-[25%] py-2">
               <strong>
-                AED <span className="text-2xl">0</span>
+                AED <span className="text-2xl">0.00</span>
               </strong>
             </div>
             <hr className="bg-[#DEDFEE] " />
@@ -153,7 +153,7 @@ function DashboardCards() {
             </div>
             <div className="flex px-[25%] py-2">
               <strong>
-                AED <span className="text-2xl">0</span>
+                AED <span className="text-2xl">0.00</span>
               </strong>
             </div>
             <hr className="bg-[#DEDFEE] " />

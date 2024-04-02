@@ -14,19 +14,19 @@ import { Doughnut, Pie } from "react-chartjs-2";
 import { faL } from "@fortawesome/free-solid-svg-icons";
 ChartJS.register(Tooltip, Title, ArcElement, Legend);
 const incomeStaticData = [
-  { label: "Interest", value: "0", id: 1 },
-  { label: "Income from Property", value: "0", id: 2 },
-  { label: "Bonus", value: "0", id: 3 },
-  { label: "Bank Returns", value: "0", id: 4 },
-  { label: "Salary", value: "0", id: 5 },
+  { label: "Interest", value: "0.00", id: 1 },
+  { label: "Income from Property", value: "0.00", id: 2 },
+  { label: "Bonus", value: "0.00", id: 3 },
+  { label: "Bank Returns", value: "0.00", id: 4 },
+  { label: "Salary", value: "0.00", id: 5 },
 ];
 const expenseStaticData = [
-  { label: "Utility Bill", value: "0", id: 1 },
-  { label: "Rent", value: "0", id: 2 },
-  { label: "Medical", value: "0", id: 3 },
-  { label: "Loan", value: "0", id: 4 },
-  { label: "Shopping", value: "0", id: 5 },
-  { label: "Leisure", value: "0", id: 6 },
+  { label: "Utility Bill", value: "0.00", id: 1 },
+  { label: "Rent", value: "0.00", id: 2 },
+  { label: "Medical", value: "0.00", id: 3 },
+  { label: "Loan", value: "0.00", id: 4 },
+  { label: "Shopping", value: "0.00", id: 5 },
+  { label: "Leisure", value: "0.00", id: 6 },
 ];
 const expFirstRowData = expenseStaticData.slice(0, 3);
 const expSecondRowData = expenseStaticData.slice(3);
@@ -142,13 +142,20 @@ function NetIncomeSection() {
                         ></div>
                         <span>{item.label}</span>
                       </div>
-                      <div className="flex justify-between gap-11 w-36">
-                        <span className="font-bold"> AED {item.value}</span>
-                        <img
-                          src={item.id % 2 === 0 ? arrowDown : arrowUp}
-                          alt="Arrow Up"
-                          className="w-4 h-4 ml-2 mt-1"
-                        />
+                      <div className="flex gap-16 w-36 ">
+                        <div className="flex gap-1">
+                          <p className="font-semibold">AED</p>
+                          <p className="font-semibold"> {item.value}</p>
+                        </div>
+
+                        <div className="flex gap-1">
+                          <img
+                            src={item.id % 2 === 0 ? arrowDown : arrowUp}
+                            alt="Arrow Up"
+                            className="w-4 h-4 ml-2 mt-1"
+                          />
+                          <h3 className="font-bold">0.0%</h3>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -164,13 +171,20 @@ function NetIncomeSection() {
                         ></div>
                         <span>{item.label}</span>
                       </div>
-                      <div className="flex justify-between gap-11 w-36">
-                        <span className="font-bold"> AED {item.value}</span>
-                        <img
-                          src={item.id % 2 === 0 ? arrowDown : arrowUp}
-                          alt="Arrow Up"
-                          className="w-4 h-4 ml-2 mt-1"
-                        />
+                      <div className="flex gap-16 w-36 ">
+                        <div className="flex gap-1">
+                          <p className="font-semibold">AED</p>
+                          <p className="font-semibold"> {item.value}</p>
+                        </div>
+
+                        <div className="flex gap-1">
+                          <img
+                            src={item.id % 2 === 0 ? arrowDown : arrowUp}
+                            alt="Arrow Up"
+                            className="w-4 h-4 ml-2 mt-1"
+                          />
+                          <h3 className="font-bold">0.0%</h3>
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -224,13 +238,20 @@ function NetIncomeSection() {
                         ></div>
                         <span>{item.label}</span>
                       </div>
-                      <div className="flex justify-between gap-11 w-36">
-                        <span className="font-bold"> AED {item.value}</span>
-                        <img
-                          src={item.id % 2 === 0 ? arrowDown : arrowUp}
-                          alt="Arrow Up"
-                          className="w-4 h-4 ml-2 mt-1"
-                        />
+                      <div className="flex gap-16 w-36 ">
+                        <div className="flex gap-1">
+                          <p className="font-semibold">AED</p>
+                          <p className="font-semibold"> {item.value}</p>
+                        </div>
+
+                        <div className="flex gap-1">
+                          <img
+                            src={item.id % 2 === 0 ? arrowDown : arrowUp}
+                            alt="Arrow Up"
+                            className="w-4 h-4 ml-2 mt-1"
+                          />
+                          <h3 className="font-bold">0.0%</h3>
+                        </div>
                       </div>
                     </div>
                   ))}

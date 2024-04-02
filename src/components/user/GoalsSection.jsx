@@ -16,7 +16,7 @@ function GoalsSection() {
                 <div className="flex flex-col justify-start p-3">
                   <strong>Children's Education</strong>
                   <p className="pt-11">Budget</p>
-                  <strong className="font-bold text-2xl">AED 0</strong>
+                  <strong className="font-bold text-2xl">AED 0.00</strong>
                 </div>
               </div>
             </div>
@@ -28,7 +28,7 @@ function GoalsSection() {
                 <div className="flex flex-col justify-start p-3">
                   <strong>Children's Education</strong>
                   <p className="pt-11">Budget</p>
-                  <strong className="font-bold text-2xl">AED 0</strong>
+                  <strong className="font-bold text-2xl">AED 0.00</strong>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ function GoalsSection() {
                 <div className="flex flex-col justify-start p-3">
                   <strong>Income required after retirement?</strong>
                   <p className="mt-5">Budget</p>
-                  <strong className="font-bold text-2xl">AED 0</strong>
+                  <strong className="font-bold text-2xl">AED 0.00</strong>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@ function GoalsSection() {
                 <div className="flex flex-col justify-start p-3">
                   <strong>Annual income for family incase of death</strong>
                   <p className="mt-2 md:mt-5">Budget</p>
-                  <strong className="font-bold text-2xl">AED 0</strong>
+                  <strong className="font-bold text-2xl">AED 0.00</strong>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ function GoalsSection() {
                     Annual income for family incase of critical illness
                   </strong>
                   <p className="mt-2 md:mt-5">Budget</p>
-                  <strong className="font-bold text-2xl">AED 0</strong>
+                  <strong className="font-bold text-2xl">AED 0.00</strong>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ function GoalsSection() {
                 <div className="flex flex-col justify-start p-3">
                   <strong>Annual income for family incase of disabilit</strong>
                   <p className="mt-2 md:mt-5">Budget</p>
-                  <strong className="font-bold text-2xl">AED 0</strong>
+                  <strong className="font-bold text-2xl">AED 0.00</strong>
                 </div>
               </div>
             </div>
