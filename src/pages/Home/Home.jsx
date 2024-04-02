@@ -11,6 +11,7 @@ import GoalsSection from "../../components/user/GoalsSection";
 import ExistingProvisionCard from "../../components/user/ExistingProvisionCard";
 import FinancialPlanningCard from "../../components/user/FinancialPlanningCard";
 import ExistingPolicies from "../../components/user/ExistingPolicies";
+import rightArrow from "../../assets/circle-right-arrow.svg";
 
 function Home() {
   return (
@@ -77,8 +78,19 @@ function Home() {
         <ExistingProvisionCard />
         <FinancialPlanningCard />
       </div>
-      <div className="flex">
+      <div className="flex overflow-x-auto">
         <ExistingPolicies />
+      </div>
+      <div className="flex justify-end items-end pt-5">
+        <button className="form__btn relative flex p-3 pl-7 text-white">
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 ml-[3rem]">
+            <div className="w-8 h-8 rounded-full bg-white flex justify-center items-center">
+              {/* Add your arrow icon here */}
+              <img src={rightArrow} alt="Arrow Icon" className="w-6 h-6" />
+            </div>
+          </div>
+          <span>Fill Form</span>
+        </button>
       </div>
     </div>
   );

@@ -28,15 +28,30 @@
 }
 .hidescroll::-webkit-scrollbar {
   display: none;
-
 }
 
 .sidebar-container {
   overflow: hidden;
   transition: width 0.5s ease-in-out;
-  width:0;
+  width: 0;
 }
 
 .sidebar-container.show {
   width: 23rem; /* Adjust the width according to your sidebar content */
+}
+
+.form__btn {
+  width: 10rem;
+  height: 3.5rem;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #1e085f;
+  border-radius: 40px;
+  transition: all ease 0.5s; /* Add transition effect */
+}
+.form__btn:hover {
+  /* Adjust properties to change on hover */
+  background-color: #2d0e7b;
+  border-color: #fff;
+  transform: scale(1.1);
 }

@@ -267,13 +267,20 @@ function NetIncomeSection() {
                         ></div>
                         <span>{item.label}</span>
                       </div>
-                      <div className="flex justify-between gap-11 w-36">
-                        <span className="font-bold"> AED {item.value}</span>
-                        <img
-                          src={item.id % 2 === 0 ? arrowDown : arrowUp}
-                          alt="Arrow Up"
-                          className="w-4 h-4 ml-2 mt-1"
-                        />
+                      <div className="flex gap-16 w-36 ">
+                        <div className="flex gap-1">
+                          <p className="font-semibold">AED</p>
+                          <p className="font-semibold"> {item.value}</p>
+                        </div>
+
+                        <div className="flex gap-1">
+                          <img
+                            src={item.id % 2 === 0 ? arrowDown : arrowUp}
+                            alt="Arrow Up"
+                            className="w-4 h-4 ml-2 mt-1"
+                          />
+                          <h3 className="font-bold">0.0%</h3>
+                        </div>
                       </div>
                     </div>
                   ))}
