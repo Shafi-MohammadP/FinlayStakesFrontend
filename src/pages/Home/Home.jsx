@@ -79,7 +79,7 @@ function Home() {
       <div className="flex">
         <GoalsSection />
       </div>
-      <div className="flex flex-col lg:flex-row gap-5 py-3">
+      <div className="flex flex-col xl:flex-row gap-5 py-3">
         <ExistingProvisionCard />
         <FinancialPlanningCard />
       </div>
