@@ -57,7 +57,7 @@ function FinancialPlanningCard() {
     <div className="w-full rounded">
       <Card className="rounded p-5" style={{ borderRadius: "16px" }}>
         <Typography className="font-bold" style={{ fontWeight: "bold" }}>
-          EXISTING PROVISIONS
+          FINANCIAL PLANNING SHORTFALL
         </Typography>
         <div className="flex items-center gap-16 py-3">
           <span className="font-bold">AED 0.00</span>

@@ -47,11 +47,25 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: #1e085f;
   border-radius: 40px;
-  transition: all ease 0.5s; /* Add transition effect */
+
+  transition: all ease 0.5s;
 }
+
 .form__btn:hover {
-  /* Adjust properties to change on hover */
   background-color: #2d0e7b;
   border-color: #fff;
+  transform: scale(1.1);
+}
+
+.profile__btn {
+  width: 8rem;
+  height: 2rem;
+  background-color: #250c77;
+  border-radius: 8px;
+  color: white;
+  transition: all ease 0.5s;
+}
+.profile__btn:hover {
+  background-color: #2d0e7b;
   transform: scale(1.1);
 }
