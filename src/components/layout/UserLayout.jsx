@@ -5,13 +5,12 @@ import UserNavbar from "./UserNavbar/UserNavbar";
 // import NewSidebar from "./UserSidebar/NewSidebar";
 
 function UserLayout() {
-  console.log("Coming");
   return (
-    <div className='w-svw'>
-    <div className='w-full '>
-      <UserNavbar />
+    <div className="w-svw">
+      <div className="w-full ">
+        <UserNavbar />
+      </div>
     </div>
-  </div>
   );
 }
 

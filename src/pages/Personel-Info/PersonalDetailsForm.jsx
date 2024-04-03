@@ -21,7 +21,7 @@ function PersonalDetailsForm() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
   return (
-    <>
+    <div className="bg-[#F2F1F9] h-[calc(100vh-5.2rem)] md:min-h-[calc(100vh-5.2rem)]  overflow-y-auto  hidescroll w-full  p-5">
       <Box
         display="flex"
         width="100%"
@@ -181,7 +181,7 @@ function PersonalDetailsForm() {
           </div>
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

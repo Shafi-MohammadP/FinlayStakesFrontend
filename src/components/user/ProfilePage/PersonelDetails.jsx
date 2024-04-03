@@ -66,12 +66,12 @@ function PersonalDetails() {
           />
         </div>
         <div className="w-full">
-          <label for="maritalStatus" class="" className="font-bold">
+          <label for="maritalStatus" className="font-bold">
             Marital Status
           </label>
           <select
             id="maritalStatus"
-            class="h-12 border-[1px] mt-3 border-[#DEDFEE]  outline-none pl-5 w-full shadow-sm rounded-md"
+            className="h-12 border-[1px] mt-3 border-[#DEDFEE]  outline-none pl-5 w-full shadow-sm rounded-md"
           >
             <option className="text-[#DEDFEE]" value="" hidden>
               Select Marital Status
