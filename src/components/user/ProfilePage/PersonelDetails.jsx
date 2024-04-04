@@ -186,6 +186,7 @@ function PersonalDetails() {
                 value="yes"
                 checked={smoker === "yes"} // Check if 'yes' is selected
                 onChange={handleRadioChange}
+                className="ml-2"
               />
               <span className="ml-2">Yes</span>
             </label>
