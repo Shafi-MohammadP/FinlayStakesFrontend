@@ -19,6 +19,9 @@ function Home() {
   const handleNavigate = () => {
     navigate("personal_details/");
   };
+  const handleEditNavigation = () => {
+    navigate("details_edit");
+  };
   return (
     <div className="bg-[#F2F1F9] h-[calc(100vh-5.2rem)] md:min-h-[calc(100vh-5.2rem)]  overflow-y-auto  hidescroll w-full  p-5">
       <div className="">
@@ -26,7 +29,10 @@ function Home() {
           <div className="flex justify-between items-center">
             <strong className="text-left">Personal Financial Review</strong>
             <div className="flex items-center space-x-2">
-              <button className="w-24 h-9 text-base text-gray-600 border border-[#F1F2F9] rounded bg-white flex justify-center items-center">
+              <button
+                className="w-24 h-9 text-base text-gray-600 border border-[#F1F2F9] rounded bg-white flex justify-center items-center"
+                onClick={() => handleEditNavigation()}
+              >
                 <img src={editIcon} alt="" className="h-5 w-5 mr-1" />
                 <span className="flex-shrink-0">Edit</span>
               </button>
@@ -83,7 +89,7 @@ function Home() {
         <ExistingProvisionCard />
         <FinancialPlanningCard />
       </div>
-      <div className="flex overflow-x-auto">
+      <div className="flex overflow-y-auto">
         <ExistingPolicies />
       </div>
       <div className="flex justify-end items-end pt-5">

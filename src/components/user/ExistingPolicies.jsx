@@ -26,8 +26,11 @@ const rows = [
 ];
 function ExistingPolicies() {
   return (
-    <div className="w-full rounded">
-      <Card className="rounded" style={{ borderRadius: "16px" }}>
+    <div className="w-full rounded overflow-y-auto">
+      <Card
+        className="rounded overflow-scroll"
+        style={{ borderRadius: "16px" }}
+      >
         <div className="flex justify-between px-9 mt-5">
           <p className="font-bold">EXISTING POLICIES</p>
         </div>
